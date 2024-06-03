@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Bodoni Moda", serif;
+    font-size: 1.2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(to right, #041308, #0b3317);
+
+}
+
+.text{
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-logos{
+    width: 50%;
+    height: 50%;
+    gap: 8px;
+    grid-template-areas: "wtf wtf hill hill hill hill"
+                         "wtf wtf ocean ocean rain rain"  
+                         "mou mou mou mou rain rain" 
+                         "tree tree beach beach beach beach";
+                    
+}
+
+.box{
+    background-size: cover;
+    background-position: top;
+    transition:all 2s ease-in-out;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    background-blend-mode:hard-light;
+    cursor: pointer;
+}
+
+#box1{
+    grid-area: wtf;
+    background-image: url(https://images.unsplash.com/photo-1546882588-d9bd63f85a7e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    
+    
+}
+
+#box2{
+    grid-area: hill;
+    background-image: url(https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?q=80&w=1642&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    
+
+
+}
+
+#box3{
+    grid-area: ocean;
+    background-image: url(https://media.istockphoto.com/id/610041376/photo/beautiful-sunrise-over-the-sea.jpg?s=1024x1024&w=is&k=20&c=_psj45iIh4hwuli27tphEaBtHo6_eMM6DUhc5hTwsqY=);
+    
+    
+    
+
+
+}
+
+#box4{
+    grid-area: rain;
+    background-image: url(https://media.istockphoto.com/id/1180366908/photo/a-trail-through-himalayan-forest.jpg?s=1024x1024&w=is&k=20&c=-GPNBvl6uV1INYtRkGpL3hz9K5ZjVFYPU8FBdxEgnYY=);
+    background-position: right;
+    
+    
+
+
+}
+
+#box5{
+    grid-area: mou;
+    background-image: url(https://images.unsplash.com/photo-1710380921732-3c836e15f171?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    
+    
+
+    
+
+}
+
+#box6{
+    grid-area: tree;
+    background-image: url(https://images.unsplash.com/photo-1446663600271-00db8247d6a0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    
+   
+}
+
+#box7{
+    grid-area: beach;
+    background-image: url(https://media.istockphoto.com/id/1151755587/photo/sunrise-behind-a-tropical-island-in-the-maldives.jpg?s=1024x1024&w=is&k=20&c=rFzBaIblaDbkFSVyQOjXCcCmDLTWgTCqmJWqMLVcZQ4=);
+    
+    
+}
+
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+#box4:hover{
+    background-position: left;
+}
+
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+        padding-block:20px ;
+        background: linear-gradient(to right, #041308, #0b3317);
+
+
+    }
+    .grid-logos{
+        width: 90%;
+        gap: 20px;
+        grid-template-areas:"wtf" 
+                            "hill"
+                            "ocean"  
+                            "mou" 
+                            "rain"
+                            "tree"
+                            "beach";
+
+    }
+    .box{
+        height:250px;
+        /* width: 100px; */
+    }
+   
+}
+
+
+
+
+
