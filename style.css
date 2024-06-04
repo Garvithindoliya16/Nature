@@ -127,7 +127,7 @@ body{
 
 .box:hover{
     background-color: #999;
-    background-position: center;
+    background-position: bottom;
     box-shadow: 0 0 4px #fff;
 }
 
